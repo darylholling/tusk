@@ -3,8 +3,7 @@
 {% block body %}
     <h1>Factuur wijzigen</h1>
 
-    {#{% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}#}
-
+    {% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
         <input type="submit" value="Edit" />

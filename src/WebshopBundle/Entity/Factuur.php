@@ -91,6 +91,12 @@ class Factuur
         return $this->datum;
     }
 
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return $this->getUserId(). ' - '.$this->getDatum();
+    }
+
 
 }
 
