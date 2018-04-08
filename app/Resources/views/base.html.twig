@@ -26,7 +26,7 @@
         <li class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Producten</a></li>
+                <li><a href="/product">Producten</a></li>
                 <li><a href="/factuur">Bekijk Facturen</a></li>
 
                 {% if  is_granted("IS_AUTHENTICATED_FULLY") %}
@@ -35,7 +35,6 @@
                        aria-expanded="false">Hallo {{ app.user | capitalize }}
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
                         <li><a href="#">Winkelwagen</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
