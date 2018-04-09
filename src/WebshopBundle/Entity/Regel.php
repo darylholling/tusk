@@ -25,20 +25,22 @@ class Regel
      *
      * @ORM\ManyToOne(targetEntity="WebshopBundle\Entity\Factuur")
      * @ORM\JoinColumn(name="factuurId", referencedColumnName="id")
+     *
      */
     private $factuurId;
 
     /**
      *
-     * @ORM\ManyToOne(targetEntity="WebshopBundle\Entity\Product")
+     * @ORM\ManyToOne(targetEntity="WebshopBundle\Entity\Producten")
      * @ORM\JoinColumn(name="productId", referencedColumnName="id")
+     *
      */
     private $productId;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="aantal", type="integer")
+     * @ORM\Column(name="aantal", type="float", nullable=true)
      */
     private $aantal;
 

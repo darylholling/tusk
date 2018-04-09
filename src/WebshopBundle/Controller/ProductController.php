@@ -2,7 +2,7 @@
 
 namespace WebshopBundle\Controller;
 
-use WebshopBundle\Entity\Product;
+use WebshopBundle\Entity\Producten;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -39,8 +39,8 @@ class ProductController extends Controller
      */
     public function newAction(Request $request)
     {
-        $product = new Product();
-        $form = $this->createForm('WebshopBundle\Form\ProductType', $product);
+        $product = new Producten();
+        $form = $this->createForm('WebshopBundle\Form\ProductenType', $product);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -63,7 +63,7 @@ class ProductController extends Controller
      * @Route("/{id}", name="product_show")
      * @Method("GET")
      */
-    public function showAction(Product $product)
+    public function showAction(Producten $product)
     {
         $deleteForm = $this->createDeleteForm($product);
 
@@ -79,10 +79,10 @@ class ProductController extends Controller
      * @Route("/{id}/edit", name="product_edit")
      * @Method({"GET", "POST"})
      */
-    public function editAction(Request $request, Product $product)
+    public function editAction(Request $request, Producten $product)
     {
         $deleteForm = $this->createDeleteForm($product);
-        $editForm = $this->createForm('WebshopBundle\Form\ProductType', $product);
+        $editForm = $this->createForm('WebshopBundle\Form\ProductenType', $product);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
@@ -104,7 +104,7 @@ class ProductController extends Controller
      * @Route("/{id}", name="product_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, Product $product)
+    public function deleteAction(Request $request, Producten $product)
     {
         $form = $this->createDeleteForm($product);
         $form->handleRequest($request);
@@ -121,11 +121,11 @@ class ProductController extends Controller
     /**
      * Creates a form to delete a product entity.
      *
-     * @param Product $product The product entity
+     * @param Producten $product The product entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(Product $product)
+    private function createDeleteForm(Producten $product)
     {
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('product_delete', array('id' => $product->getId())))
