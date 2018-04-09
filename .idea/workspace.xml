@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c01aeee7-55be-431f-b27f-3db8e666fc11" name="Default" comment="test commit push">
+    <list default="true" id="c01aeee7-55be-431f-b27f-3db8e666fc11" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/product/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/producten/edit.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/product/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/producten/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/product/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/producten/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/product/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/producten/show.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Controller/ProductController.php" afterPath="$PROJECT_DIR$/src/WebshopBundle/Controller/ProductController.php" />
-      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/WebshopBundle/Entity/Producten.php" />
-      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php" afterPath="$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php" />
-      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Form/ProductType.php" afterPath="$PROJECT_DIR$/src/WebshopBundle/Form/ProductenType.php" />
-      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Repository/ProductRepository.php" afterPath="$PROJECT_DIR$/src/WebshopBundle/Repository/ProductenRepository.php" />
+      <change beforePath="$PROJECT_DIR$/src/WebshopBundle/Repository/ProductenRepository.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,38 +20,28 @@
       <file leaf-file-name="Regel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="273">
+              <caret line="113" column="5" lean-forward="false" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegelType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/RegelType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductenType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/ProductenType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producten.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Producten.php">
+      <file leaf-file-name="Factuur.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
-              <caret line="141" column="6" lean-forward="false" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
+              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="143" column="7" lean-forward="false" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -80,16 +62,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factuur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -166,10 +138,8 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base2.html.twig" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/product/new.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Product.php" />
         <option value="$PROJECT_DIR$/src/WebshopBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/factuur/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/factuur/new.html.twig" />
@@ -178,8 +148,11 @@
         <option value="$PROJECT_DIR$/app/Resources/views/factuur/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/product/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php" />
         <option value="$PROJECT_DIR$/src/WebshopBundle/Form/ProductenType.php" />
+        <option value="$PROJECT_DIR$/src/WebshopBundle/Form/ProductType.php" />
+        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php" />
+        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php" />
       </list>
     </option>
   </component>
@@ -301,7 +274,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="producten" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="product" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="tusk" type="b2602c69:ProjectViewProjectNode" />
@@ -516,7 +489,7 @@
       <workItem from="1522345165516" duration="24393000" />
       <workItem from="1522754504830" duration="15413000" />
       <workItem from="1522840728748" duration="23539000" />
-      <workItem from="1523270057207" duration="3802000" />
+      <workItem from="1523270057207" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="help me">
       <created>1522930740210</created>
@@ -525,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522930740210</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="product -&gt; producten">
+      <created>1523279708018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523279708018</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67161000" />
+    <option name="totallyTimeSpent" value="69326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,7 +528,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22395274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -574,14 +554,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="help me" />
     <MESSAGE value="test commit push" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit push" />
+    <MESSAGE value="product -&gt; producten" />
+    <option name="LAST_COMMIT_MESSAGE" value="product -&gt; producten" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/twig/c7/c7824d9e6c5c60e94e0a0d26302585b9fe6b5bc5513cfeeb9348856d4a65eda7.php" />
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -602,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -791,7 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/producten/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/product/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
@@ -820,7 +793,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/producten/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/product/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
           <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="45" />
@@ -828,7 +801,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/producten/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/product/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -836,7 +809,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/producten/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/product/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
@@ -892,42 +865,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php">
+    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/ProductType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Producten.php">
+    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Repository/ProductRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="141" column="6" lean-forward="false" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#7#47#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/RegelType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Regel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="273">
+          <caret line="113" column="5" lean-forward="false" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/RegelType.php">
+    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="143" column="7" lean-forward="false" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Form/ProductenType.php">
+    <entry file="file://$PROJECT_DIR$/src/WebshopBundle/Entity/Factuur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="441">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding />
         </state>
       </provider>
