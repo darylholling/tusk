@@ -31,7 +31,7 @@ class Regel
 
     /**
      *
-     * @ORM\ManyToOne(targetEntity="WebshopBundle\Entity\Producten")
+     * @ORM\ManyToOne(targetEntity="WebshopBundle\Entity\Product")
      * @ORM\JoinColumn(name="productId", referencedColumnName="id")
      *
      */
@@ -126,5 +126,8 @@ class Regel
     {
         return $this->aantal;
     }
+
+
+
 }
 

@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="product")
  * @ORM\Entity(repositoryClass="WebshopBundle\Repository\ProductRepository")
  */
-class Producten
+class Product
 {
 
     /**
@@ -68,7 +68,7 @@ class Producten
      *
      * @param string $code
      *
-     * @return Producten
+     * @return Product
      */
     public function setCode($code)
     {
@@ -92,7 +92,7 @@ class Producten
      *
      * @param string $omschrijving
      *
-     * @return Producten
+     * @return Product
      */
     public function setOmschrijving($omschrijving)
     {
@@ -116,7 +116,7 @@ class Producten
      *
      * @param string $prijs
      *
-     * @return Producten
+     * @return Product
      */
     public function setPrijs($prijs)
     {
@@ -140,7 +140,7 @@ class Producten
      *
      * @param string $btw
      *
-     * @return Producten
+     * @return Product
      */
     public function setBtw($btw)
     {
@@ -157,6 +157,11 @@ class Producten
     public function getBtw()
     {
         return $this->btw;
+    }
+
+    public function __toString()
+    {
+        return $this->getOmschrijving();
     }
 }
 
