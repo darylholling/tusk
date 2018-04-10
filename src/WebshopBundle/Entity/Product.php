@@ -51,7 +51,29 @@ class Product
      */
     private $btw;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagepath", type="string", length=255, nullable=true)
+     *
+     */
+    private $imagepath;
 
+    /**
+     * @return string
+     */
+    public function getImagepath()
+    {
+        return $this->imagepath;
+    }
+
+    /**
+     * @param string $imagepath
+     */
+    public function setImagepath($imagepath)
+    {
+        $this->imagepath = $imagepath;
+    }
 
     /**
      * Get id

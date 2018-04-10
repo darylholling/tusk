@@ -5,26 +5,30 @@
 
     <table class="table table-striped">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ product.id }}</td>
-            </tr>
-            <tr>
-                <th>Code</th>
-                <td>{{ product.code }}</td>
-            </tr>
-            <tr>
-                <th>Omschrijving</th>
-                <td>{{ product.omschrijving }}</td>
-            </tr>
-            <tr>
-                <th>Prijs</th>
-                <td>{{ product.prijs }}</td>
-            </tr>
-            <tr>
-                <th>Btw</th>
-                <td>{{ product.btw }}</td>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <td>{{ product.id }}</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>{{ product.code }}</td>
+        </tr>
+        <tr>
+            <th>Omschrijving</th>
+            <td>{{ product.omschrijving }}</td>
+        </tr>
+        <tr>
+            <th>Prijs</th>
+            <td>{{ product.prijs }}</td>
+        </tr>
+        <tr>
+            <th>Btw</th>
+            <td>{{ product.btw }}</td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td>{{ product.imagepath }}</td>
+        </tr>
         </tbody>
     </table>
 
@@ -37,7 +41,7 @@
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input class="btn btn-danger" type="submit" value="Delete">
+            <input class="btn btn-danger" type="submit" value="Delete">
             {{ form_end(delete_form) }}
         </li>
     </ul>

@@ -23,7 +23,7 @@
                 <td>{{ product.code }}</td>
                 <td>{{ product.omschrijving }}</td>
                 <td>€{{ product.prijs }}</td>
-                <td>{{ product.btw }}</td>
+                <td>{{ product.btw }}%</td>
                 {% if is_granted('ROLE_ADMIN') %}
                 <td>
                     <ul>
