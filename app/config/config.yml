@@ -8,6 +8,9 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    images_directory: '%kernel.root_dir%/web/uploads/images'
+    download_image: '/uploads/images'
+
 
 framework:
     #esi:             ~
@@ -38,7 +41,8 @@ framework:
 twig:
     form_themes: ["bootstrap_3_horizontal_layout.html.twig"]
     debug:            "%kernel.debug%"
-    strict_variables: "%kernel.debug%"
+    globals:
+        logodir: '%download_image%'
 
 # Doctrine Configuration
 doctrine:

@@ -5,6 +5,8 @@ namespace WebshopBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+
 
 class ProductType extends AbstractType
 {
@@ -13,7 +15,17 @@ class ProductType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('code')->add('omschrijving')->add('prijs')->add('btw')        ;
+        $builder
+            ->add('code')
+            ->add('omschrijving')
+            ->add('prijs')
+            ->add('btw')
+            ->add('imagepath', FileType::class, [
+                'data_class' => null,
+                'empty_data' => $builder->getForm()->getData('Product')->getImagePath(),
+                'label' => 'logo image file',
+                'required' => false]);
+        ;
     }
     
     /**

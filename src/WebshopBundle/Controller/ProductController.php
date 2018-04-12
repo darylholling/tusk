@@ -2,10 +2,12 @@
 
 namespace WebshopBundle\Controller;
 
+use Symfony\Component\HttpFoundation\File\File;
 use WebshopBundle\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Product controller.
@@ -44,9 +46,27 @@ class ProductController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            // $file stores the uploaded PDF file
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $product->getImagepath();
+
+            // Generate a unique name for the file before saving it
+            $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+
+            // Move the file to the directory where brochures are stored
+//            TODO HIER GAAT HET KAPOT
+            $file->move(
+                $this->getParameter('images_directory'),
+                $fileName
+            );
+
+            // Update the 'brochure' property to store the PDF file name
+            // instead of its contents
+            $product->setImagepath($fileName);
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($product);
-            $em->flush($product);
+            $em->flush();
 
             return $this->redirectToRoute('product_show', array('id' => $product->getId()));
         }
@@ -86,6 +106,30 @@ class ProductController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $product->setImagepath(
+                new File($this->getParameter('images_directory') . '/' . $product->getImagepath())
+            );
+            // $file stores the uploaded PDF file
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $product->getImagepath();
+
+            /*            if ($file) {
+                            unlink($file);
+                        }*/
+
+            // Generate a unique name for the file before saving it
+            $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+
+            // Move the file to the directory where brochures are stored
+            $file->move(
+                $this->getParameter('images_directory'),
+                $fileName
+            );
+
+            // Update the 'brochure' property to store the PDF file name
+            // instead of its contents
+            $product->setImagepath($fileName);
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('product_edit', array('id' => $product->getId()));
@@ -110,9 +154,16 @@ class ProductController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $file = $product->getImagepath();
+
+	            $filename = $this->getParameter('images_directory').'/'.$file;
+	            if ($filename) {
+                	                unlink($filename);
+	            }
+
             $em = $this->getDoctrine()->getManager();
             $em->remove($product);
-            $em->flush($product);
+            $em->flush();
         }
 
         return $this->redirectToRoute('product_index');
@@ -130,7 +181,6 @@ class ProductController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('product_delete', array('id' => $product->getId())))
             ->setMethod('DELETE')
-            ->getForm()
-        ;
+            ->getForm();
     }
 }

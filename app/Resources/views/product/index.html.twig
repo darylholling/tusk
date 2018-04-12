@@ -5,16 +5,17 @@
 
     <table class="table table-striped">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Code</th>
-                <th>Omschrijving</th>
-                <th>Prijs</th>
-                <th>Btw</th>
-                {% if is_granted('ROLE_ADMIN') %}
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Omschrijving</th>
+            <th>Afbeelding</th>
+            <th>Prijs</th>
+            <th>Btw</th>
+            {% if is_granted('ROLE_ADMIN') %}
                 <th>Actions</th>
-                {% endif %}
-            </tr>
+            {% endif %}
+        </tr>
         </thead>
         <tbody>
         {% for product in products %}
@@ -22,19 +23,21 @@
                 <td><a href="{{ path('product_show', { 'id': product.id }) }}">{{ product.id }}</a></td>
                 <td>{{ product.code }}</td>
                 <td>{{ product.omschrijving }}</td>
+                <td><img src="{{ logodir }}/{{ product.imagepath }}" class="img-rounded"
+                         alt="{{ product.omschrijving }}" width="75"></td>
                 <td>€{{ product.prijs }}</td>
                 <td>{{ product.btw }}%</td>
                 {% if is_granted('ROLE_ADMIN') %}
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('product_show', { 'id': product.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('product_edit', { 'id': product.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="{{ path('product_show', { 'id': product.id }) }}">show</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('product_edit', { 'id': product.id }) }}">edit</a>
+                            </li>
+                        </ul>
+                    </td>
                 {% endif %}
             </tr>
         {% endfor %}

@@ -60,19 +60,27 @@ class Product
     private $imagepath;
 
     /**
+     * Set imagepath
+     *
+     * @param string $imagepath
+     *
+     * @return Product
+     */
+    public function setImagepath($imagepath)
+    {
+        $this->imagepath = $imagepath;
+
+        return $this;
+    }
+
+    /**
+     * Get imagepath
+     *
      * @return string
      */
     public function getImagepath()
     {
         return $this->imagepath;
-    }
-
-    /**
-     * @param string $imagepath
-     */
-    public function setImagepath($imagepath)
-    {
-        $this->imagepath = $imagepath;
     }
 
     /**

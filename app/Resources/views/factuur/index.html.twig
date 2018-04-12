@@ -5,17 +5,20 @@
 
     <table class="table table-striped">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Datum</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Datum</th>
+            <th>Factuureigenaar</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
+
         {% for factuur in factuurs %}
             <tr>
                 <td><a href="{{ path('factuur_show', { 'id': factuur.id }) }}">{{ factuur.id }}</a></td>
                 <td>{{ factuur.datum }}</td>
+                <td>{{ factuur.userId }}</td>
                 <td>
                     <ul>
                         <li>
